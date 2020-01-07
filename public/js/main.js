@@ -1,1 +1,5 @@
-console.log('in main.js');
+const socket = io();
+
+socket.on('message', message => {
+    console.log(message);
+});
